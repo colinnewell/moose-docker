@@ -1,0 +1,7 @@
+# docker-compose run devmachine
+version: "2"
+services:
+  devmachine:
+    image: quay.io/colinnewell/moose
+    volumes:
+      - ./:/home/developer
