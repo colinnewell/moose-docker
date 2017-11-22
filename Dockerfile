@@ -1,6 +1,6 @@
 FROM debian:stretch
 
-RUN apt-get update && apt-get install -y cpanminus build-essential less libssl-dev openssl zlib1g-dev
+RUN apt-get update && apt-get install -y cpanminus build-essential less libssl-dev openssl zlib1g-dev git
 RUN cpanm --installdeps Moose
 ENV PERL5LIB=.
 RUN cpanm DateTime Term::ReadLine::Perl Term::ReadKey Dist::Zilla Devel::PPPort\
