@@ -5,8 +5,8 @@ RUN cpanm --installdeps Moose
 ENV PERL5LIB=.
 RUN cpanm DateTime Term::ReadLine::Perl Term::ReadKey Dist::Zilla Devel::PPPort\
         Dist::Zilla::Plugin::MakeMaker::Awesome ExtUtils::HasCompiler Pod::Weaver::Section::AllowOverride\
-        Test::Inline Test::Inline::Extract IPC::System::Simple CheckAuthorDeps CheckDelta\
-        CheckReleaseType Clean Dist::Zilla::Plugin::BumpVersionAfterRelease\
+        Test::Inline Test::Inline::Extract IPC::System::Simple \
+        Dist::Zilla::Plugin::BumpVersionAfterRelease\
         Dist::Zilla::Plugin::CheckChangesHasContent Dist::Zilla::Plugin::CheckVersionIncrement\
         Dist::Zilla::Plugin::Conflicts Dist::Zilla::Plugin::CopyFilesFromRelease\
         Dist::Zilla::Plugin::EnsurePrereqsInstalled Dist::Zilla::Plugin::Git::Check\
@@ -23,8 +23,7 @@ RUN cpanm DateTime Term::ReadLine::Perl Term::ReadKey Dist::Zilla Devel::PPPort\
         Dist::Zilla::Plugin::Test::CheckBreaks Dist::Zilla::Plugin::Test::Compile\
         Dist::Zilla::Plugin::Test::EOL Dist::Zilla::Plugin::Test::Kwalitee \
         Dist::Zilla::Plugin::Test::NoTabs Dist::Zilla::Plugin::Test::ReportPrereqs \
-        Dist::Zilla::Plugin::lib Documentation ExtractInlineTests GenerateDocs \
-        GitUpToDate MakeMaker SimpleAuthority SimpleProvides
+        Dist::Zilla::Plugin::lib
 
 ENV PERL5LIB=
 VOLUME /home/developer
